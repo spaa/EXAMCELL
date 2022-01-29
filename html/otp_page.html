@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/otp_page.css">
+	<link rel="stylesheet" href="../css/w3.css">
+	
+
+	
+	<!--JQuery link -->
+	<script src="../js/jquery.min.js"></script>
+
+	<title>OTP VERIFICATION</title>
+</head>
+<body>
+		
+
+	<form>
+		<div class="container w3-card-4 w3-animate-opacity w3-content ">
+			<div class="w3-container w3-center w3-xlarge w3-black w3-padding-large">OTP VERIFICATION</div>
+			<div class="w3-padding w3-center w3-margin ">Please Enter the OTP send to your email address <strong>swapnilchopade07@gmail.com</strong> and Mobile Number <strong>xxxxxx9996</strong>
+			</div>
+			<div class="w3-container w3-center">
+				<input id="otp" type="text" name="otp" class="w3-input otp" id="otp" maxlength="6">
+			</div>
+			<div id="alert_box" class="w3-padding w3-center w3-margin ">You can click on Resend OTP after <span id="count_down" class="w3-text-teal"></span> </div>
+			<div class="w3-row w3-padding">
+				<a id="change_mobile" class="w3-button w3-hover-none w3-half w3-hover-text-teal" href="#">Send OTP to another Mobile Number</a>
+				<a id="change_email" class="w3-button w3-hover-none w3-half w3-hover-text-teal" href="#">Send OTP to another Email Address</a>
+			</div>
+			<div class=" w3-row w3-container w3-center w3-padding-24 w3-margin">
+				<input id="submit_otp" type="submit" class="w3-btn w3-teal content">
+				<div id="resend_otp" class="w3-btn w3-teal w3-content w3-hide">RESEND OTP</div>
+			</div>
+		</div>
+	</form>
+<script type="text/javascript">
+	var timeLeft = 30;
+var count_down = document.getElementById('count_down');
+var resend_otp = document.getElementById('resend_otp');
+var alert_box = document.getElementById('alert_box');
+var timerId = setInterval(countdown, 1000);
+
+
+function countdown() {
+    if (timeLeft == -1) {
+        clearTimeout(timerId);
+        resend_otp.className += 'w3-show';
+        alert_box.className += 'w3-hide';
+        
+    } else {
+        count_down.innerHTML = '00.'+timeLeft + ' seconds';
+        timeLeft--;
+    }
+}
+
+
+
+</script>
+</body>
+</html>

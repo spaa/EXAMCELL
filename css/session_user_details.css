@@ -1,0 +1,67 @@
+#user_details{
+	width: 50%;
+	position: absolute;
+	transform: translateX(410px) translateY(100px);
+	z-index: 100px;
+}
+#profile_image{
+	position: relative;
+	left: 30%;
+	padding: 10px;
+}
+#Change_password,#user_password{
+	display: none;
+}
+
+
+#username,#firstname,#lastname,#gender_box,#gender,#dob,#email,#mobile,#add1,#add2,
+#conclude,#Change_password div,#user_password div{
+	padding-bottom: 10px;
+	display: flex;
+}
+
+#username strong,#username input,
+#firstname strong,#firstname input,
+#lastname strong,#lastname input,
+#gender_box strong,#gender_box #gender,
+#gender input,
+#dob strong,#dob input,
+#email strong,#email input,
+#mobile strong,#mobile input,
+#add1 strong,#add1 input,
+#add2 strong,#add2 input,
+#conclude input,
+#Change_password div strong,#Change_password div input,
+#user_password div strong,#user_password div input{
+	flex: 1;
+}
+
+#change_password,#change_username{
+	cursor: pointer;
+}
+
+
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="radio"]:focus{
+	border:2px solid #0AC986;
+}
+.error{
+			position: relative;
+			animation: shake 0.3s;
+		}
+		@keyframes shake{
+			10%,50%,90%{
+				left: -15px;
+			}
+			0%,20%,40%,60%,80%,100%{
+				left: 0px;
+			}
+			30%,70%{
+			    left: 15px;
+			}
+			
+		}

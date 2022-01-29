@@ -1,0 +1,36 @@
+label{
+	position: relative;
+	top: 7px;
+}
+
+img{
+	cursor: pointer;
+}
+
+input,textarea{
+outline: none;
+background: transparent;
+}
+input:focus,input:hover,textarea:hover,textarea:focus{
+	border-bottom:1px solid teal;
+}
+
+._9_documents input{
+	width:150px;
+}
+._9_documents tr label{
+	font-size:14px;
+	overflow: hidden;
+	width: 200px;
+	height: 40px;
+}
+
+tr>th{
+	text-align: center;
+}
+
+.proceed{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}

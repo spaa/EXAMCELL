@@ -1,0 +1,70 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.data {
+	border: 1px solid #00bcd4;
+}
+
+.NotificationAnimation {
+	animation-name: NotificationAnimation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes NotificationAnimation {
+	0% {
+		background-color: red;
+		color: yellow;
+	}
+
+	50% {
+		background-color: black;
+		color: white;
+	}
+
+	100% {
+		background-color: red;
+		color: yellow;
+	}
+}
+
+/* Standard syntax */
+@keyframes NotificationAnimation {
+	0% {
+		background-color: red;
+		color: yellow;
+	}
+
+	50% {
+		background-color: black;
+		color: white;
+	}
+
+	100% {
+		background-color: red;
+		color: yellow;
+	}
+}
+
+.NotificationTextAnimation{
+	animation-name: NotificationTextAnimation;
+  	animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes NotificationTextAnimation {
+	0% {color: red;}
+	50% {color: white;}
+	100% {color: red;}
+  }
+  
+  /* Standard syntax */
+  @keyframes NotificationTextAnimation {
+	0% {color: red;}
+	50% {color: white;}
+	100% {color: red;}
+  }

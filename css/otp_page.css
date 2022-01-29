@@ -1,0 +1,27 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #DDD;
+}
+.container{
+	max-width: 700px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#otp {
+  display: block;
+  margin: 0.6em auto;
+  border: none;
+  padding: 0;
+  width: 9ch;
+  background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/ 8.5ch 2px no-repeat;
+  font: 6ch droid sans mono, consolas, monospace;
+  letter-spacing: 0.5ch;
+}
+#otp:focus {
+  outline: none;
+  color: dodgerblue;
+}
